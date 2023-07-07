@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
+
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
@@ -42,7 +43,7 @@
             <h1 id="city"></h1>
             <ul>
               <li>Last updated: <span id="date"></span></li>
-              <li id="description">clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -50,34 +51,34 @@
               <div class="clearfix">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                  alt="Clear"
+                  alt=""
                   id="icon"
                   class="float-left"
                 />
                 <div class="float-left">
                   <strong id="temperature"></strong
-                  ><span class="units"
-                    ><a herf="#" id="celsius-link">°C | </a>
-                    <a herf="#" id="fahrenheit-link">°F</a></span
-                  >
+                  ><span class="units">°C</span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span></li>
-                <li>Wind: <span id="wind"></span></li>
+                <li>Wind: <span id="wind"></span>m/h</li>
               </ul>
             </div>
           </div>
+          <div class="weather-forecast" id="weather-forecast"></div>
         </div>
         <small>
-          <a href="https://github.com/nuriyealp/weather-app" target="_blank"
+          <a
+            href="https://github.com/nuriyealp/vanilla-weather-app"
+            target="_blank"
             >Open-source code</a
           >, by Nuriye Alp
         </small>
       </div>
     </div>
-    <script src="./src/app.js"></script>
+    <script src="/src/app.js"></script>
   </body>
 </html>
